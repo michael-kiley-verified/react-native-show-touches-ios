@@ -24,7 +24,7 @@ or
 ```javascript
 import ShowTouches from "react-native-show-touches-ios";
 
-// Wrap your root app to show default touch indicator for all touches
+// Wrap your root component to show default touch indicator for all touches
 const App = () => {
   return (
     <ShowTouches>
@@ -39,7 +39,6 @@ const App = () => {
 ```javascript
 import ShowTouches from "react-native-show-touches-ios";
 
-// Wrap your root app to show default touch indicator for all touches
 const App = () => {
   return (
     <ShowTouches
@@ -59,17 +58,21 @@ const App = () => {
 
 ## Props
 
-| Name             | Description                                                                 | Type   | Required |                            Default Value                             |
-| :--------------- | :-------------------------------------------------------------------------- | :----- | :------: | :------------------------------------------------------------------: |
-| percent          | The percentage used for displaying the progress                             | Number |    ✓     |                                                                      |
-| radius           | The radius in `px` of the component (including border)                      | Number |    ✓     |                                                                      |
-| borderWidth      | The border width in `px`                                                    | Number |    ✓     |                                                                      |
-| color            | The border color                                                            | String |          |     ![#f00](https://placehold.it/15/f00/000000?text=+) `'#f00'`      |
-| shadowColor      | The background color of the border                                          | String |          |     ![#999](https://placehold.it/15/999/000000?text=+) `'#999'`      |
-| bgColor          | The inner background color of the component                                 | String |          | ![#e9e9ef](https://placehold.it/15/e9e9ef/000000?text=+) `'#e9e9ef'` |
-| children         | The children to render inside this component                                | Node   |          |                                `null`                                |
-| containerStyle   | The custom styling which will be applied to the container of the `children` | Style  |          |                                `null`                                |
-| outerCircleStyle | The custom styling which will be applied to the outer circle                | Style  |          |                                `null`                                |
+| Name          | Description                                                         | Type   |                                       Default Value                                       |
+| :------------ | :------------------------------------------------------------------ | :----- | :---------------------------------------------------------------------------------------: |
+| color         | The inner color of the touch indicator                              | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
+| opacity       | the inner opacity of the touch indicator                            | Number |                                            0.5                                            |
+| radius        | The radius of the touch indicator                                   | Number |                                            40                                             |
+| borderColor   | The border color                                                    | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
+| borderOpacity | the opacity of the border                                           | Number |                                             1                                             |
+| borderWidth   | The width of the border                                             | Number |                                             2                                             |
+| fadeDuration  | the duration of the touch indicator's fade out animation in seconds | Number |                                            0.3                                            |
+
+## Todo
+
+- [x] iOS support
+- [ ] Android support
+- [ ] More animation customization options
 
 ## Author
 
