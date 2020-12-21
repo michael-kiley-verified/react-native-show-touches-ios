@@ -7,6 +7,7 @@
 node_modules/
 npm-debug.log
 yarn-error.log
+yarn-debug.log
 
 # Xcode
 #
@@ -27,3 +28,23 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+
+# Android/IJ
+#
+.idea
+.gradle
+local.properties
+android.iml
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
+
+# Bundle artifact
+*.jsbundle
+
+# Cocoapods
+#
+example/ios/Pods
