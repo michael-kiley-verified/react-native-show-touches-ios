@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-show-touches-ios.git",
-    "baseUrl": "https://github.com/github_account/react-native-show-touches-ios"
+    "url": "git+https://github.com/michael-kiley-verified/react-native-show-touches-ios.git",
+    "baseUrl": "https://github.com/michael-kiley-verified/react-native-show-touches-ios"
   },
   "keywords": [
     "react-native",
