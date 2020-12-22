@@ -1,6 +1,6 @@
 # react-native-show-touches-ios
 
-![](README/demo.gif)
+<img src="https://github.com/michael-kiley-verified/react-native-show-touches-ios/blob/main/README/demo.gif" width="200" />
 
 Use react-native-show-touches to show customizable touch indicators for any touches recieved on iOS.  
 App UI components will continue to function as expected.
