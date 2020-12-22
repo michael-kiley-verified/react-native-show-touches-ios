@@ -65,7 +65,6 @@ class ShowTouchesView: UIView, UIGestureRecognizerDelegate {
           showNewTouch(storedTouch)
         }
       case .changed:
-        print("changed")
         for storedTouch in gesture.storedTouches.values{
           if(storedTouch.removeFromView){
             // If this touch has been taken out of the gesture, fade out its indicator
@@ -79,7 +78,6 @@ class ShowTouchesView: UIView, UIGestureRecognizerDelegate {
           }
         }
       case .ended:
-        print("ended")
         for storedTouch in gesture.storedTouches.values {
           // The gesture is over - hide any touch indicators that are being shown
           if(storedTouch.removeFromView){

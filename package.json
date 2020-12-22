@@ -7,7 +7,11 @@
   "files": [
     "README.md",
     "index.js",
-    "ios",
+    "ios/ShowTouches-Bridging-Header.h",
+    "ios/ShowTouchesViewManager.m",
+    "ios/AllTouchesRecognizer.swift",
+    "ios/ShowTouchesView.swift",
+    "ios/ShowTouchesViewManager.swift",
     "react-native-show-touches-ios.podspec"
   ],
   "scripts": {

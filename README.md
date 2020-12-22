@@ -13,10 +13,6 @@ or
 
 `$ npm install react-native-show-touches-ios --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-show-touches-ios`
-
 ## Usage
 
 ### Basic touch indicators
@@ -51,6 +47,76 @@ const App = () => {
       fadeDuration={1}
     >
       <SafeAreaView style={styles.container}>{/* Your app... */}</SafeAreaView>
+    </ShowTouches>
+  );
+};
+```
+
+### \*\*\*Usage with react-navigation
+
+You can wrap your root component with <ShowTouches\> just as you normally would.  
+In order for your underlying UI components to work, you must use react-native-gesture-handler  
+as described in the react-navigation docs.
+
+#### Proper usage with react-native-gesture-handler:
+
+```javascript
+
+import ShowTouches from 'react-native-show-touches-ios';
+import {TouchableOpacity} from 'react-native-gesture-handler
+
+const App = () => {
+  return (
+    <ShowTouches
+      color="red"
+      opacity={0.1}
+      radius={100}
+      borderColor="orange"
+      borderOpacity={0.9}
+      borderWidth={5}
+      fadeDuration={1}>
+        ... REACT-NAVIGATION-CONTAINER ...
+            <TouchableOpacity
+              onPress={() => {
+                console.log('pressed');
+              }}>
+              <Text>Press Me</Text>
+            </TouchableOpacity>
+        ... REACT-NAVIGATION-CONTAINER END ...
+    </ShowTouches>
+  );
+};
+```
+
+#### Incorrect usage with react-native-gesture-handler:
+
+TouchableOpacity from react-native will not work when using react-navigation - must use the component  
+provided by react-native-gesture handler when using react-navigation
+
+```javascript
+import ShowTouches from "react-native-show-touches-ios";
+import { TouchableOpacity } from "react-native";
+
+const App = () => {
+  return (
+    <ShowTouches
+      color="red"
+      opacity={0.1}
+      radius={100}
+      borderColor="orange"
+      borderOpacity={0.9}
+      borderWidth={5}
+      fadeDuration={1}
+    >
+      ... REACT-NAVIGATION-CONTAINER ...
+      <TouchableOpacity
+        onPress={() => {
+          console.log("pressed");
+        }}
+      >
+        <Text>Press Me</Text>
+      </TouchableOpacity>
+      ... REACT-NAVIGATION-CONTAINER END ...
     </ShowTouches>
   );
 };
