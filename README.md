@@ -9,11 +9,17 @@ Has no effect on Android.
 
 ## Getting started
 
+#### 1. Install with package manager
+
 `$ yarn add react-native-show-touches-ios`
 
 or
 
 `$ npm install react-native-show-touches-ios --save`
+
+#### 2. Install CocoaPod
+
+`cd ios && pod install`
 
 ## Usage
 
