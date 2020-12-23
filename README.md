@@ -63,8 +63,7 @@ const App = () => {
 ### \*\*\*Usage with react-navigation
 
 When using with an app that uses react-navigation, you can wrap your root component with <ShowTouches\> just as you normally would.  
-In order for your underlying UI components to work, you must use react-native-gesture-handler  
-as described in the react-navigation docs.
+In order for your underlying UI components to work, you must use react-native-gesture-handler as described in the react-navigation docs.
 
 #### Proper usage with react-native-gesture-handler:
 
@@ -98,8 +97,7 @@ const App = () => {
 
 #### Incorrect usage with react-native-gesture-handler:
 
-TouchableOpacity from react-native will not work when using react-navigation - must use the component  
-provided by react-native-gesture handler when using react-navigation
+TouchableOpacity from react-native will not work when using react-navigation - must use the component provided by react-native-gesture handler when using react-navigation
 
 ```javascript
 import ShowTouches from "react-native-show-touches-ios";
@@ -134,12 +132,12 @@ const App = () => {
 
 | Name          | Description                                                         | Type   |                                       Default Value                                       |
 | :------------ | :------------------------------------------------------------------ | :----- | :---------------------------------------------------------------------------------------: |
-| color         | The inner color of the touch indicator                              | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
+| color         | the inner color of the touch indicator                              | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
 | opacity       | the inner opacity of the touch indicator                            | Number |                                            0.5                                            |
-| radius        | The radius of the touch indicator                                   | Number |                                            40                                             |
-| borderColor   | The border color                                                    | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
+| radius        | the radius of the touch indicator                                   | Number |                                            40                                             |
+| borderColor   | the border color                                                    | String | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `'#007bff'` (UIColor.systemBlue) |
 | borderOpacity | the opacity of the border                                           | Number |                                             1                                             |
-| borderWidth   | The width of the border                                             | Number |                                             2                                             |
+| borderWidth   | the width of the border                                             | Number |                                             2                                             |
 | fadeDuration  | the duration of the touch indicator's fade out animation in seconds | Number |                                            0.3                                            |
 
 ## Todo
