@@ -1,7 +1,7 @@
 {
   "name": "react-native-show-touches-ios",
   "title": "react-native-show-touches-ios",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Show customizable touch indicators on iOS in React Native",
   "main": "index.js",
   "files": [

@@ -62,7 +62,7 @@ const App = () => {
 
 ### \*\*\*Usage with react-navigation
 
-You can wrap your root component with <ShowTouches\> just as you normally would.  
+When using with an app that uses react-navigation, you can wrap your root component with <ShowTouches\> just as you normally would.  
 In order for your underlying UI components to work, you must use react-native-gesture-handler  
 as described in the react-navigation docs.
 
